@@ -4,12 +4,12 @@ import DrawCard from '../components/DrawCard';
 import useDrawData from '../hook/useDrawData';
 import useCheckHome from '../hook/useCheckHome';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper.min.css';
+import { Swiper as SwiperClass } from 'swiper';
 
 const Draw = () => {
   useCheckHome();
   const { data, isLoading } = useDrawData();
-  const swiperRef = useRef(null);
+  const swiperRef = useRef<SwiperClass | any>(null);
 
   useEffect(() => {
     const syncSlide = () => {

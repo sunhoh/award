@@ -30,13 +30,7 @@ const Draw = () => {
     <>
       {isLoading && <Loading />}
       <div className="absolute inset-0 -z-10">
-        <video
-          className="w-full h-full object-cover"
-          src="public/bg.mp4"
-          autoPlay
-          loop
-          muted
-        ></video>
+        <video className="w-full h-full object-cover" src="/bg.mp4" autoPlay loop muted></video>
       </div>
 
       <div className={`${isLoading && 'blur-sm'}  text-center`}>

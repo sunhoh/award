@@ -4,7 +4,7 @@ import DrawCard from '../components/DrawCard';
 import useDrawData from '../hook/useDrawData';
 import useCheckHome from '../hook/useCheckHome';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import 'swiper/swiper.min.css';
 
 const Draw = () => {
   useCheckHome();
